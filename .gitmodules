@@ -1,0 +1,3 @@
+[submodule "yukari-exvoice"]
+	path = yukari-exvoice
+	url = https://github.com/shibafu528/yukari-exvoice.git
