@@ -56,6 +56,10 @@ end
         mRuby.loadString("__printstr__ 'call __printstr__'")
         mRuby.loadString("puts 'call puts'")
 
+        // Update UserConfig
+        mRuby.loadString("UserConfig['startup_timestamp'] = " + System.currentTimeMillis())
+        mRuby.loadString("puts UserConfig['startup_timestamp']")
+
         // Run
         val mRubyThread = Thread(Runnable {
             try {
