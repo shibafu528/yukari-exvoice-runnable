@@ -53,12 +53,24 @@ Plugin.create :sample_2 do
   end
 end
 """)
+        mRuby.loadString("""
+Plugin.create :sample_3 do
+  on_sample do |v|
+    Delayer::Deferred.new {
+      puts "sample_3:0"
+    }.next {
+      puts "sample_3:1"
+    }
+  end
+end
+""")
         mRuby.loadString("__printstr__ 'call __printstr__'")
         mRuby.loadString("puts 'call puts'")
 
         // Update UserConfig
+        mRuby.loadString("puts 'Last Startup: ' + UserConfig['startup_timestamp'].to_s")
         mRuby.loadString("UserConfig['startup_timestamp'] = " + System.currentTimeMillis())
-        mRuby.loadString("puts UserConfig['startup_timestamp']")
+        mRuby.loadString("puts 'Startup: ' + UserConfig['startup_timestamp'].to_s")
 
         // Run
         val mRubyThread = Thread(Runnable {
@@ -67,7 +79,7 @@ end
                 while (true) {
                     Plugin.call(mRuby, "sample")
                     Plugin.call(mRuby, "sample2")
-                    mRuby.callTopLevelFunc("tick")
+                    mRuby.callTopLevelProc("tick")
                     Thread.sleep(500)
                 }
             } catch (e: InterruptedException) {
