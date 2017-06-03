@@ -1,0 +1,204 @@
+{
+  "created_at":"Sat Jun 03 09:52:13 +0000 2017",
+  "id":870941180665540608,
+  "id_str":"870941180665540608",
+  "text":"RT @toshi_a: あひる焼きにションベン引っ掛けて消化したるわ",
+  "truncated":false,
+  "entities":{
+    "hashtags":[
+
+    ],
+    "symbols":[
+
+    ],
+    "user_mentions":[
+      {
+        "screen_name":"toshi_a",
+        "name":"オープンソースカンファレンス",
+        "id":15926668,
+        "id_str":"15926668",
+        "indices":[
+          3,
+          11
+        ]
+      }
+    ],
+    "urls":[
+
+    ]
+  },
+  "source":"<a href=\"https:\/\/www.wakamesoba98.net\/sobacha\/\" rel=\"nofollow\">MateCha<\/a>",
+  "in_reply_to_status_id":null,
+  "in_reply_to_status_id_str":null,
+  "in_reply_to_user_id":null,
+  "in_reply_to_user_id_str":null,
+  "in_reply_to_screen_name":null,
+  "user":{
+    "id":606860144,
+    "id_str":"606860144",
+    "name":"デウス・エクス・ヤケタ",
+    "screen_name":"ahiru3net",
+    "location":"溶鉱炉",
+    "description":"燃えろ世界 https:\/\/t.co\/tVHX3LvA2y",
+    "url":null,
+    "entities":{
+      "description":{
+        "urls":[
+          {
+            "url":"https:\/\/t.co\/tVHX3LvA2y",
+            "expanded_url":"http:\/\/amzn.asia\/ciKbPVV",
+            "display_url":"amzn.asia\/ciKbPVV",
+            "indices":[
+              6,
+              29
+            ]
+          }
+        ]
+      }
+    },
+    "protected":false,
+    "followers_count":600,
+    "friends_count":120,
+    "listed_count":55,
+    "created_at":"Wed Jun 13 03:43:26 +0000 2012",
+    "favourites_count":63609,
+    "utc_offset":32400,
+    "time_zone":"Tokyo",
+    "geo_enabled":false,
+    "verified":false,
+    "statuses_count":106402,
+    "lang":"ja",
+    "contributors_enabled":false,
+    "is_translator":false,
+    "is_translation_enabled":false,
+    "profile_background_color":"EBEBEB",
+    "profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/485760864855678978\/cxQv-aPk.jpeg",
+    "profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/485760864855678978\/cxQv-aPk.jpeg",
+    "profile_background_tile":true,
+    "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/768423353833054208\/00e3KywJ_normal.png",
+    "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/768423353833054208\/00e3KywJ_normal.png",
+    "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/606860144\/1495942461",
+    "profile_link_color":"990000",
+    "profile_sidebar_border_color":"FFFFFF",
+    "profile_sidebar_fill_color":"F3F3F3",
+    "profile_text_color":"333333",
+    "profile_use_background_image":true,
+    "has_extended_profile":true,
+    "default_profile":false,
+    "default_profile_image":false,
+    "following":true,
+    "follow_request_sent":false,
+    "notifications":false,
+    "translator_type":"none"
+  },
+  "geo":null,
+  "coordinates":null,
+  "place":null,
+  "contributors":null,
+  "retweeted_status":{
+    "created_at":"Sat Jun 03 09:51:00 +0000 2017",
+    "id":870940875802554368,
+    "id_str":"870940875802554368",
+    "text":"あひる焼きにションベン引っ掛けて消化したるわ",
+    "truncated":false,
+    "entities":{
+      "hashtags":[
+
+      ],
+      "symbols":[
+
+      ],
+      "user_mentions":[
+
+      ],
+      "urls":[
+
+      ]
+    },
+    "source":"<a href=\"http:\/\/yukari.shibafu528.info\" rel=\"nofollow\">Yukari for Android<\/a>",
+    "in_reply_to_status_id":null,
+    "in_reply_to_status_id_str":null,
+    "in_reply_to_user_id":null,
+    "in_reply_to_user_id_str":null,
+    "in_reply_to_screen_name":null,
+    "user":{
+      "id":15926668,
+      "id_str":"15926668",
+      "name":"オープンソースカンファレンス",
+      "screen_name":"toshi_a",
+      "location":"幻ちょあ郷",
+      "description":"名前: としぁ Twitterクライアントを満足に作れない程度の能力。ゆゆ式20周。OVA9話良かった 使用するスペカ 創符「ファッキンコード」 赤珠「賢者の石」 煎餅「おせんべい〄ぱりーん」 積木「マインクラフト -Tofu-」 「としぁのアトリエ -ておくれの錬金術士-」 奇跡「ミクミクフルーツ」",
+      "url":"https:\/\/t.co\/SjLjGLhK8V",
+      "entities":{
+        "url":{
+          "urls":[
+            {
+              "url":"https:\/\/t.co\/SjLjGLhK8V",
+              "expanded_url":"http:\/\/mikutter.hachune.net\/",
+              "display_url":"mikutter.hachune.net",
+              "indices":[
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description":{
+          "urls":[
+
+          ]
+        }
+      },
+      "protected":false,
+      "followers_count":5547,
+      "friends_count":644,
+      "listed_count":440,
+      "created_at":"Thu Aug 21 02:28:48 +0000 2008",
+      "favourites_count":196940,
+      "utc_offset":32400,
+      "time_zone":"Tokyo",
+      "geo_enabled":false,
+      "verified":false,
+      "statuses_count":300694,
+      "lang":"ja",
+      "contributors_enabled":false,
+      "is_translator":false,
+      "is_translation_enabled":false,
+      "profile_background_color":"9AE4E8",
+      "profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/19766144\/mikuloop.jpg",
+      "profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/19766144\/mikuloop.jpg",
+      "profile_background_tile":true,
+      "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/841542394931638272\/T3zdUiXU_normal.jpg",
+      "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/841542394931638272\/T3zdUiXU_normal.jpg",
+      "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/15926668\/1392395117",
+      "profile_link_color":"0084B4",
+      "profile_sidebar_border_color":"BDDCAD",
+      "profile_sidebar_fill_color":"DDFFCC",
+      "profile_text_color":"333333",
+      "profile_use_background_image":true,
+      "has_extended_profile":false,
+      "default_profile":false,
+      "default_profile_image":false,
+      "following":true,
+      "follow_request_sent":false,
+      "notifications":false,
+      "translator_type":"none"
+    },
+    "geo":null,
+    "coordinates":null,
+    "place":null,
+    "contributors":null,
+    "is_quote_status":false,
+    "retweet_count":1,
+    "favorite_count":6,
+    "favorited":true,
+    "retweeted":false,
+    "lang":"ja"
+  },
+  "is_quote_status":false,
+  "retweet_count":1,
+  "favorite_count":0,
+  "favorited":true,
+  "retweeted":false,
+  "lang":"ja"
+}

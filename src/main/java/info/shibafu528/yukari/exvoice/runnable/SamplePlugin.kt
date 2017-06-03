@@ -1,9 +1,9 @@
 package info.shibafu528.yukari.exvoice.runnable
 
 import android.util.Log
-import info.shibafu528.yukari.exvoice.Event
+import info.shibafu528.yukari.exvoice.pluggaloid.Event
 import info.shibafu528.yukari.exvoice.MRuby
-import info.shibafu528.yukari.exvoice.Plugin
+import info.shibafu528.yukari.exvoice.pluggaloid.Plugin
 
 /**
  * Pluggaloid-Javaプラグインのサンプル
