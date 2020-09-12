@@ -14,4 +14,12 @@ class SamplePlugin(mRuby: MRuby) : Plugin(mRuby, "sample") {
     fun onSample() {
         Log.d("SamplePlugin", "called!")
     }
+
+    @Event("period")
+    fun onPeriod() {
+        mRuby.delayerHandler.post {
+            call(mRuby, "sample")
+            call(mRuby, "sample2")
+        }
+    }
 }

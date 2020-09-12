@@ -16,7 +16,6 @@ import twitter4j.TwitterObjectFactory
 
 class MainActivity : AppCompatActivity() {
     var mRuby: MRuby? = null
-    var mRubyThread: Thread? = null
     var mRubyPointers: Set<MRubyPointer> = mutableSetOf()
 
     val stdoutView: TextView by lazy { findViewById(R.id.text) as TextView }
@@ -55,6 +54,7 @@ Plugin.create :sample_2 do
   on_sample2 do |v|
     Android::Log.d 'on_sample2: call Log.d'
     puts 'on_sample2: call puts'
+    notice 'on_sample2: call notice'
   end
 end
 """)
@@ -97,28 +97,11 @@ end
         )
         Plugin.call(mRuby, "appear", messages)
 
-        // Run
-        val mRubyThread = Thread(Runnable {
-            try {
-                while (true) {
-                    Plugin.call(mRuby, "sample")
-                    Plugin.call(mRuby, "sample2")
-                    mRuby.callTopLevelProc("tick")
-                    Thread.sleep(500)
-                }
-            } catch (e: InterruptedException) {
-                Log.d("ExVoiceRunner", "Interrupt!")
-            }
-        }, "ExVoiceRunner")
-        mRubyThread.start()
-
         this.mRuby = mRuby
-        this.mRubyThread = mRubyThread
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        mRubyThread?.interrupt()
         mRubyPointers.forEach { it.dispose() }
         mRubyPointers = mutableSetOf()
         mRuby?.close()
