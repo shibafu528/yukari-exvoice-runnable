@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     var mRuby: MRuby? = null
     var mRubyPointers: Set<MRubyPointer> = mutableSetOf()
 
-    val stdoutView: TextView by lazy { findViewById(R.id.text) as TextView }
+    lateinit var stdoutView: TextView
     val printCallbackHandler: Handler = object : Handler(Looper.getMainLooper()) {
         override fun handleMessage(msg: Message) {
             val text = msg.obj.toString()
@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        stdoutView = findViewById(R.id.text)
 
         // Construct mruby
         val mRuby = MRuby(applicationContext)
@@ -90,7 +91,6 @@ end
                 TwitterObjectFactory.createStatus(resources.openRawResource(resId).use { it.bufferedReader().readText() })
         fun Status.toMessage(mRuby: MRuby) =
                 StatusConverter.toMessage(mRuby, this)
-
         val messages = arrayOf(
                 createStatusFromRes(R.raw.tweets_215401020602322945).toMessage(mRuby).apply { mRubyPointers += this },
                 createStatusFromRes(R.raw.tweets_870941180665540608).toMessage(mRuby).apply { mRubyPointers += this }
