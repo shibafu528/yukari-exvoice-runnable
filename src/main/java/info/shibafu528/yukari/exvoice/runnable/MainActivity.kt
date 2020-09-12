@@ -10,7 +10,6 @@ import android.util.Log
 import android.widget.TextView
 import info.shibafu528.yukari.exvoice.MRuby
 import info.shibafu528.yukari.exvoice.MRubyPointer
-import info.shibafu528.yukari.exvoice.converter.StatusConverter
 import info.shibafu528.yukari.exvoice.pluggaloid.Plugin
 import twitter4j.Status
 import twitter4j.TwitterObjectFactory
