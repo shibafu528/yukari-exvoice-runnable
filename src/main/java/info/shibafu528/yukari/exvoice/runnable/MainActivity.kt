@@ -89,8 +89,6 @@ end
         // Status to Message
         fun createStatusFromRes(@RawRes resId: Int) =
                 TwitterObjectFactory.createStatus(resources.openRawResource(resId).use { it.bufferedReader().readText() })
-        fun Status.toMessage(mRuby: MRuby) =
-                StatusConverter.toMessage(mRuby, this)
         val messages = arrayOf(
                 createStatusFromRes(R.raw.tweets_215401020602322945).toMessage(mRuby).apply { mRubyPointers += this },
                 createStatusFromRes(R.raw.tweets_870941180665540608).toMessage(mRuby).apply { mRubyPointers += this }
