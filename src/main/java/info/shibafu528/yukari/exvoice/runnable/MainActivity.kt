@@ -4,14 +4,13 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import android.support.annotation.RawRes
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.TextView
+import androidx.annotation.RawRes
+import androidx.appcompat.app.AppCompatActivity
 import info.shibafu528.yukari.exvoice.MRuby
 import info.shibafu528.yukari.exvoice.MRubyPointer
 import info.shibafu528.yukari.exvoice.pluggaloid.Plugin
-import twitter4j.Status
 import twitter4j.TwitterObjectFactory
 
 class MainActivity : AppCompatActivity() {
