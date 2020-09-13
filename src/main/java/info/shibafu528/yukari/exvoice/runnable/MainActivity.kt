@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         // Load bootstrap
-        mRuby.loadString("Android.require_assets 'bootstrap.rb'")
+        mRuby.requireAssets("bootstrap.rb")
 
         // Load Java Plugin
         mRuby.registerPlugin(SamplePlugin::class.java)
