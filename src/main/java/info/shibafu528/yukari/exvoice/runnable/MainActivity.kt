@@ -76,6 +76,27 @@ Plugin.create :message_receiver do
   end
 end
 """)
+        mRuby.loadString("""
+            class VirtualWorld < Diva::Model
+                register :virtual_world
+            end
+            
+            Plugin.create :message_composer do
+                on_appear do |msgs|
+                    world, = Plugin.filtering(:world_current, nil)
+                    msgs.each { |msg| compose(world, msg) }
+                end
+                
+                vworld = VirtualWorld.new({})
+                filter_world_current do |result|
+                    if result
+                        [result]
+                    else
+                        [vworld]
+                    end
+                end
+            end
+        """.trimIndent())
 
         mRuby.loadString("__printstr__ 'call __printstr__'")
         mRuby.loadString("puts 'call puts'")
