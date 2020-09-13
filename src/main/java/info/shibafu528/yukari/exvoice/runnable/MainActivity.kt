@@ -97,7 +97,9 @@ end
                 end
                 
                 on_boot do
-                    compose(vworld, body: '(^o^)アゲハ蝶歌います！ (^o^)しじん ヾ(＠⌒ー⌒＠)ノておくれ〜')
+                    compose(vworld, body: '(^o^)アゲハ蝶歌います！ (^o^)しじん ヾ(＠⌒ー⌒＠)ノておくれ〜').trap do |e|
+                        error e
+                    end
                 end
             end
         """.trimIndent())
