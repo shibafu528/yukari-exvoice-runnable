@@ -22,8 +22,13 @@ class SamplePlugin(mRuby: MRuby) : Plugin(mRuby, "sample") {
         }
     }
 
+    @Spell("compose", constraints = ["virtual_world"])
+    fun compose(world: Any, @Keyword("body") body: String?, @RestKeywords options: Map<String, Any?>) {
+        Log.d("SamplePlugin", "compose[virtual_world] called! (body: $body)")
+    }
+
     @Spell("compose", constraints = ["virtual_world", "twitter_tweet"])
-    fun composeWithTweet(world: Any, tweet: Map<String, Any?>, @Keyword body: String?, @RestKeywords options: Map<String, Any?>) {
-        Log.d("SamplePlugin", "compose[virtual_world, twitter_tweet] called!")
+    fun compose(world: Any, tweet: Map<String, Any?>, @Keyword("body") body: String?, @RestKeywords options: Map<String, Any?>) {
+        Log.d("SamplePlugin", "compose[virtual_world, twitter_tweet] called! (body: $body)")
     }
 }
