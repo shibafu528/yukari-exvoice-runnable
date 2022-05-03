@@ -10,6 +10,7 @@ import androidx.annotation.RawRes
 import androidx.appcompat.app.AppCompatActivity
 import info.shibafu528.yukari.exvoice.MRuby
 import info.shibafu528.yukari.exvoice.MRubyPointer
+import info.shibafu528.yukari.exvoice.miquire.Miquire
 import info.shibafu528.yukari.exvoice.pluggaloid.Plugin
 import twitter4j.TwitterObjectFactory
 
@@ -44,6 +45,9 @@ class MainActivity : AppCompatActivity() {
 
         // Load bootstrap
         mRuby.requireAssets("bootstrap.rb")
+
+        Miquire.loadAll(mRuby)
+        Plugin.call(mRuby, "boot", null)
 
         // Load Java Plugin
         mRuby.registerPlugin(SamplePlugin::class.java)
